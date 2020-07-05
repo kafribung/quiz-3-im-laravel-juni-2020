@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>SB Admin 2 - Blank</title>
+  <title>@yield('title')</title>
 
   @include('includes.css')
 

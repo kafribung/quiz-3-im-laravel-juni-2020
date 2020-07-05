@@ -4,11 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+// Import DB yg Login
+use Auth;
+
 
 class DashboardController extends Controller
 {
     public function index()
     {
-        return view('dashboard.dashboard');
+        $user = Auth::user();
+
+        return view('dashboard.dashboard', compact('user'));
     }
 }

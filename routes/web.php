@@ -23,10 +23,10 @@ Route::get('/', function () {
 // Route::put('/items/{id}', 'ItemController@update'); // menyimpan perubahan dari form edit
 // Route::delete('/items/{id}', 'ItemController@destroy'); // menghapus data dengan id
 
-
-Route::get('/dashboard', 'DashboardController@index');
-Route::resource('items', 'ItemController');
-
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/dashboard', 'DashboardController@index');
+    Route::resource('items', 'ItemController');
+});
 
 
 Auth::routes();

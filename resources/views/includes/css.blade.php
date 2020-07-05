@@ -4,6 +4,8 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
+<link rel="shortcut icon" href="{{asset('assets/img/favicon.png')}}" type="image/x-icon">
+
 
 <!-- Custom fonts for this template-->
 <link href="{{ asset('assets/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
