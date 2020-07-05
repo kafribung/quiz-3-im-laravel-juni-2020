@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="{{asset('assets/img/favicon.png')}}" type="image/x-icon">
 
 
-    <title>Artikelku</title>
+    <title>@yield('title')</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>

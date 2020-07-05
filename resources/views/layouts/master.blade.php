@@ -67,7 +67,7 @@
   @include('includes.script')
 
    <!-- script tambahan sweet alert, bukan dari bawaan sb-admin-2 -->
-   @stack('scripts')
+   @stack('after-script')
 
 </body>
 

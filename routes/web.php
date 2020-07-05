@@ -10,27 +10,19 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
-
-// Route::get('/items/create', 'ItemController@create'); // menampilkan halaman form
-// Route::post('/items', 'ItemController@store'); // menyimpan data
-// Route::get('/items', 'ItemController@index'); // menampilkan semua
-// Route::get('/items/{id}', 'ItemController@show'); // menampilkan detail item dengan id 
-// Route::get('/items/{id}/edit', 'ItemController@edit'); // menampilkan form untuk edit item
-// Route::put('/items/{id}', 'ItemController@update'); // menyimpan perubahan dari form edit
-// Route::delete('/items/{id}', 'ItemController@destroy'); // menghapus data dengan id
+// MAAF KAK, SAYA BERIMPROFISASI SEDIKIT
 
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/dashboard', 'DashboardController@index');
     Route::resource('admin', 'AdminController');
-    Route::resource('artikel', 'ItemController');
-    
+    Route::resource('artikel', 'ArtikelController');
 });
 
 
+Route::get('/', 'HomeController@index');
+Route::get('/home/{slug}', 'HomeController@show');
+
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+
