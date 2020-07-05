@@ -25,7 +25,9 @@ Route::get('/', function () {
 
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/dashboard', 'DashboardController@index');
-    Route::resource('items', 'ItemController');
+    Route::resource('admin', 'AdminController');
+    Route::resource('artikel', 'ItemController');
+    
 });
 
 

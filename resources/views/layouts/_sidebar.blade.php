@@ -23,7 +23,7 @@
     <hr class="sidebar-divider">
 
     <!-- Heading -->
-    <li class="nav-item">
+    <li class="nav-item {{Request::segment(1) == 'admin' ? 'active' : ''}}">
       <a class="nav-link" href="/admin">
         <i class="fas fa-fw fa-cog"></i>
         <span>Admin</span></a>

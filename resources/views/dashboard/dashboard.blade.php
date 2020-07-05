@@ -95,8 +95,8 @@
           <!-- Card Body -->
           <div class="card-body">
             <div class="chart-area">
-              <h1 class="text-center">Selamat Datang Om Ganteng</h1>
-              <h1 class="text-center">Dashboard Ini Untuk Menulis Artikel</h1>
+              <h1 class="text-center">Selamat Datang "{{$user->name}}" </h1>
+              <h1 class="text-center">Dashboard Ini Untuk Menulis Artikel Tugas Bootcamp</h1>
             </div>
           </div>
         </div>
